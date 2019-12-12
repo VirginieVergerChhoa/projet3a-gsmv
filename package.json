@@ -1,7 +1,7 @@
 {
   "name": "scratch",
   "version": "1.0.0",
-  "description": "",
+  "description": "Static Web Project Structure",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -35,5 +35,14 @@
     "webpack-stream": "^5.2.1",
     "yargs": "^14.2.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VirginieVergerChhoa/projet3a-gsmv.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/VirginieVergerChhoa/projet3a-gsmv/issues"
+  },
+  "homepage": "https://github.com/VirginieVergerChhoa/projet3a-gsmv#readme"
 }
