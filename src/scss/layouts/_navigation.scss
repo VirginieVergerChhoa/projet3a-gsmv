@@ -1,12 +1,44 @@
-.navbar {
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-
-  a {
-    color: rgba(255,255,255,1)
-  }
+.main-nav{
+  background-color: $primary;
 }
 
-.nav-link {
-  color: #ffffff;
+.main-nav img{
+  width: 170px;
+}
+
+.main-nav ul{
+  list-style-type: none;
+}
+
+.main-nav ul li a {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.main-menu li a{
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+}
+
+.main-menu-wrapper{
+  
+}
+
+.join-us{
+
+}
+
+.join-us-btn{
+  background-color: $secondary;
+  color: #fff;
+  border-radius: 25px;
+  padding: 5px;
 }

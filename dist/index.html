@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>3 A | La vie vous sourira</title>
-  <link rel="shortcut icon" href="./images/favicon.ico">
+  <link rel="shortcut icon" href="./images/favicon/favicon.ico">
   <link rel="stylesheet" href="css/main.css" type="text/css">
 
 </head>
@@ -16,39 +16,72 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <nav class="main-nav">
 
+    <div class="main-menu-wrapper container">
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav main-nav mx-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Concept <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Nos centres</a>
-        </li>
-        <li>
-          <a class="navbar-brand" href="index.html"><img src="./images/LOGO_EAT_IT(RVB).png" width="170"
-              alt="Logo Eat It"></a>
-            </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Témoignages</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
+      <ul class="main-menu">
+        <li><a href="#">Concept</a></li>
+        <li><a href="#">Nos centres</a></li>
+        <a href="index.html">
+          <div class="brand">
+            <a href="index.html" title="Accueil">
+              <img src="./images/Logo/3A-Logo_RVB.png" alt="Logo" class="logo">
+            </a>
+          </div><!-- .brand -->
+        </a>
+        <li><a href="#">Témoignages</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
 
     </div>
+  </nav><!-- .main-nav -->
 
-    <!-- ===========================BARRE DE NAVIGATION=========================== -->
+  <!-- ===========================BARRE DE NAVIGATION=========================== -->
 
-  </nav>
+  <!-- ===========================HEADER=========================== -->
+  <section class="introduction">
+    <h1>Avec 3A, la vie vous sourira</h1>
+  </section>
+  <!-- ===========================HEADER=========================== -->
+
+  <!-- ===========================NOUS VOUS EUX=========================== -->
+  <section class="services container bg-white py-5 align-items-center">
+
+    <header class="title-section text-center">
+      <h1>Nous, eux, vous...</h1>
+    </header>
+
+    <article class="list-services row justify-content-between">
+
+      <div class="services-article col-sm-6 col-lg-3 d-flex flex-column align-items-center">
+        <a class="link-service" href="#"><img src="./images/" alt="" class="service-img">
+          <p class="service-title">Vos atouts sont nos atouts</p>
+        </a>
+        <a class="btn-services" href="#">Rejoignez-nous</a>
+      </div>
+
+      <div class="services-article col-sm-6 col-lg-3 d-flex flex-column align-items-center">
+        <a class="link-service" href="#"><img src="./images/" alt="" class="service-img">
+          <p class="service-title">Le bien-être chez soi</p>
+        </a>
+        <a class="btn-services" href="#">Sollicitez-nous</a>
+      </div>
+
+      <div class="services-article col-sm-6 col-lg-3 d-flex flex-column align-items-center">
+        <a class="link-service" href="#"><img src="./images/" alt="" class="service-img">
+          <p class="service-title">La bienveillance est votre priorité ?</p>
+        </a>
+        <a class="btn-services" href="#">Franchisez-vous</a>
+      </div>
+
+    </article>
+
+  </section>
+  <!-- ===========================NOUS VOUS EUX=========================== -->
+
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
