@@ -7294,7 +7294,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {});
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/Virginie/Documents/projet3a-gsmv/src/js/main.js */"./src/js/main.js");
+module.exports = __webpack_require__(/*! /Users/Virginie/Documents/projet3a-gsmv/projet3a-gsmv/src/js/main.js */"./src/js/main.js");
 
 
 /***/ }),
