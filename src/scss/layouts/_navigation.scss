@@ -21,11 +21,17 @@
   justify-content: space-between;
   align-items: center;
   padding: 30px;
+  margin: 0;
 }
 
 .main-menu li a{
   text-transform: uppercase;
   letter-spacing: 0.24em;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
 }
 
 .main-menu-wrapper{
@@ -41,4 +47,31 @@
   color: #fff;
   border-radius: 25px;
   padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .main-menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .main-menu {
+      justify-content: center;
+      & > li {
+        display: none;
+      }
+    }
+    .menu-toggle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .main-menu-toggle {
+        display: none;
+        &.visible {
+          display: block;
+        }
+      }
+    }
+  }
+
 }

@@ -1,4 +1,18 @@
+.btn-services {
+  background: $secondary;
+  color: white;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 25px;
+  text-transform: uppercase;
 
+  &:hover {
+    text-decoration: none;
+    color: $red;
+    background: none;
+    border: 1px solid $primary
+  }
+}
 
 
 

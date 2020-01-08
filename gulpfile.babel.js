@@ -25,6 +25,10 @@ const paths = {
 		src: 'src/images/**/*.{jpg,jpeg,png,svg,gif,ico}',
 		dest: 'dist/images'
 	},
+	fonts: {
+		src: 'node_modules/fork-awesome/fonts/*.{eot,svg,ttf,woff,woff2}',
+		dest: 'dist/fonts'
+	},
 	scripts: {
 		src: ['src/js/main.js'],
 		dest: 'dist/js'
@@ -71,6 +75,11 @@ export const images = () => {
 		.pipe(gulp.dest(paths.images.dest));
 }
 
+export const fonts = () => {
+	return gulp.src(paths.fonts.src)
+		.pipe(gulp.dest(paths.fonts.dest));
+}
+
 export const watch = () => {
 	gulp.watch('src/scss/**/*.scss', styles);
 	gulp.watch('src/js/**/*.js', gulp.series(scripts, reload));
@@ -115,7 +124,7 @@ export const scripts = () => {
 	.pipe(gulp.dest(paths.scripts.dest));
 }
 
-export const dev = gulp.series(clean, gulp.parallel(styles, scripts, images, copy), serve, watch);
-export const build = gulp.series(clean, gulp.parallel(styles, scripts, images, copy));
+export const dev = gulp.series(clean, gulp.parallel(styles, scripts, images, fonts, copy), serve, watch);
+export const build = gulp.series(clean, gulp.parallel(styles, scripts, images, fonts, copy));
 
 export default dev;

@@ -35,7 +35,9 @@
     "webpack-stream": "^5.2.1",
     "yargs": "^14.2.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "fork-awesome": "^1.1.7"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VirginieVergerChhoa/projet3a-gsmv.git"

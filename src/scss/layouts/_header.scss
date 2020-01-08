@@ -1,9 +1,23 @@
 .introduction{
-  background: url();
-}
+  margin-top: 0;
+  position: relative;
+  .bg-intro{
+  }
 
-.introduction h1{
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  .container {
+    position: relative;
+  }
+  
+  .intro-title{
+    display: block;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.24em;
+    color : #000000;
+    margin: 0;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+  }
 }
