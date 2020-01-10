@@ -1,12 +1,13 @@
-.main-nav{
+.main-nav {
   background-color: $primary;
+  padding-top: 30px;
 }
 
-.main-nav img{
+.main-nav img {
   width: 170px;
 }
 
-.main-nav ul{
+.main-nav ul {
   list-style-type: none;
 }
 
@@ -14,19 +15,27 @@
   color: #fff;
   display: flex;
   flex-direction: column;
+  margin: 25px auto;
 }
 
-.main-menu{
+.fa-bars {
+  font-size: 3rem;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  color: white;
+}
+
+.main-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
-  margin: 0;
 }
 
-.main-menu li a{
+.main-menu li a {
   text-transform: uppercase;
   letter-spacing: 0.24em;
+  display: block;
+  color: #ffffff;
 }
 
 .menu-toggle {
@@ -34,44 +43,136 @@
   cursor: pointer;
 }
 
-.main-menu-wrapper{
-  
+.join {
+  display: flex;
 }
 
-.join-us{
-
-}
-
-.join-us-btn{
+.btn-join {
+  flex-direction: row;
+  justify-content: space-between;
   background-color: $secondary;
   color: #fff;
   border-radius: 25px;
-  padding: 5px;
+  padding: 10px;
+  text-align: center;
+  margin: 35px 15px;
 }
+
 
 @media screen and (max-width: 768px) {
 
   .main-menu-wrapper {
     display: flex;
+    flex-direction: row;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+
+    .main-menu-toggle {
+      display: none;
+
+      &.visible {
+        display: block;
+      }
+    }
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+
+  .main-menu-wrapper {
+    display: flex;
     flex-direction: column;
     align-items: center;
+
     .main-menu {
       justify-content: center;
-      & > li {
+
+      &>li {
         display: none;
       }
     }
+
     .menu-toggle {
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-transform: uppercase;
+      letter-spacing: 0.24em;
+
       .main-menu-toggle {
         display: none;
+
         &.visible {
           display: block;
         }
       }
     }
   }
-
 }
+
+/* Tablette */
+@media screen and (min-width: 577px) {
+  .main-menu-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .main-menu {
+      justify-content: center;
+
+      &>li {
+        display: none;
+      }
+    }
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+
+    .main-menu-toggle {
+      display: none;
+
+      &.visible {
+        display: block;
+      }
+    }
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 960px) {
+
+.main-menu img{
+  max-width: none;
+}
+
+.join, .menu-toggle{
+  display: none;
+}
+.main-nav ul li a{
+  margin: 0 5rem;
+}
+
+  .main-menu-wrapper {
+    .main-menu {
+
+      &>li {
+        display: inline-block;
+        justify-items: space-between;
+      }
+    }
+  }
+}
+
+/* ------------------------- */
