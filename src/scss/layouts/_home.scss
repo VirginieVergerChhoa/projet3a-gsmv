@@ -1,83 +1,91 @@
-.services {
-    padding-bottom: 30px;
-}
-
-.list-services {
-    margin-top: 30px;
-}
-
-.link-service {
-    position: relative;
-}
-
-.service-title {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.5);
-    display: block;
-    color: white;
-    width: 100%;
-    text-align: center;
-    padding: 5px;
-    margin-bottom: 0;
-    bottom: 0;
-    a {
-        color: white;
-        text-decoration: none;
+    .title-section {
+        bottom: 50px;
+    }
+    
+    .services {
+        padding-bottom: 30px;
+        border-bottom: solid 1px $primary;
+    }
+    
+    .list-services {
+        margin-top: 30px;
+    }
+    
+    .link-service {
+        position: relative;
+    }
+    
+    .link-service img {
+        border-radius: 25px;
         &:hover {
-            color: $red;
+            filter: blur(1px);
         }
     }
-}
-
-// <!-- ================= SECTION ACCOMPAGNEMENT =========================== -->
-.card {
-    border-radius: 10px;
-}
-
-.card h2 {
-    font-size: 18px;
-}
-
-.card-body {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.card-title {
-    color: white;
-}
-
-// <!-- ================= SECTION VALEUR =========================== -->
-.card-valeur p {
-    color: black;
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.card-h-30 .card-h-50 {
-    padding: 30px;
-}
-
-// <!-- =========================== SECTION CENTRE =========================== -->
-.section-centre p {
-    color: #9164CC;
-    text-align: center;
-    font-size: 30px;
-}
-
-//<!-- ================= SECTION TEMOIGNAGES =========================== -->
-.section-temoignages {
-    text-align: center;
-    img {
-        max-width: 150px;
-        margin: 10px;
+    
+    .service-title {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        display: block;
+        color: white;
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        margin-bottom: 0;
+        bottom: 0;
+        border-radius: 0 0 25px 25px;
+        &:hover {
+            color: $secondary;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+                color: $primary;
+            }
+        }
+        // <!-- ================= SECTION ACCOMPAGNEMENT =========================== -->
+        .card {
+            border-radius: 10px;
+        }
+        .card h2 {
+            font-size: 18px;
+        }
+        .card-body {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .card-title {
+            color: white;
+        }
+        // <!-- ================= SECTION VALEUR =========================== -->
+        .card-valeur p {
+            color: black;
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .card-h-30 .card-h-50 {
+            padding: 30px;
+        }
+        // <!-- =========================== SECTION CENTRE =========================== -->
+        .section-centre p {
+            color: #9164CC;
+            text-align: center;
+            font-size: 30px;
+        }
+        //<!-- ================= SECTION TEMOIGNAGES =========================== -->
+        .section-temoignages {
+            text-align: center;
+            img {
+                max-width: 150px;
+                margin: 10px;
+            }
+            .card-tem-img {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .card-titletem {
+                color: $secondary;
+            }
+        }
     }
-    .card-tem-img {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .card-titletem {
-        color: $secondary;
-    }
-}
